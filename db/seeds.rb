@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+City.destroy_all
+Rating.destroy_all
+
+
+tokyo = City.create!(name: "Tokyo", country: "Japan", photo: "http://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/Tokyo/Tokyo---CB-guide---Skyline-large.jpg")
+
+ratings = Rating.create!([{username: "#", overall_rating: "#", safety_rating: "#", comment: "#", recommendations: , user_photo: "#", city_id: city.id}])
