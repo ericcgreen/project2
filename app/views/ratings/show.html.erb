@@ -1,0 +1,17 @@
+<h1>
+  <%= City.find(@rating.city_id).name %>, <%= City.find(@rating.city_id).country %>
+</h1>
+
+<h2> <%= @rating.overall_rating %> </h2>
+<p>
+<%= image_tag @rating.user_photo %>
+
+<%= @rating.safety_rating %>
+
+<%= @rating.comment %>
+
+<%= @rating.recommendations %>
+
+<time> Updated at <%= @rating.updated_at %> by <%= @rating.user.email %> </time>
+
+</p>

@@ -4,6 +4,7 @@ class CitiesController < ApplicationController
   end
   def show
     @city = City.find(params[:id])
+    @ratings = @city.ratings.all
   end
   def edit
     @city = City.find(params[:id])

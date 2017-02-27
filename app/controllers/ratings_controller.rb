@@ -8,6 +8,9 @@ class RatingsController < ApplicationController
     @rating = @city.ratings.create(rating_params)
     redirect_to city_path(@city)
   end
+  def show
+    @rating = Rating.find(params[:id])
+  end
   def edit
     @city = City.find(params[:city_id])
     @rating = Rating.find(params[:id])
