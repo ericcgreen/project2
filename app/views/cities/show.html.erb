@@ -18,8 +18,10 @@
 <% @ratings.each do |rating| %>
 
 <p>
-  
-  View review by <%= link_to "#{rating.user.email}", city_rating_path(@city, rating) %>
+  <%= rating.comment %>
+  <br>
+  View <%= link_to "full review", city_rating_path(@city, rating) %> by
+  <%= rating.user.email %>
 </p>
 
 <% end %>
