@@ -10,7 +10,7 @@ class RatingsController < ApplicationController
   end
   def create
     @city = City.find(params[:city_id])
-    @rating = @city.ratings.create(rating_params)
+    @rating = @city.ratings.create!(rating_params.merge(user: current_user))
     redirect_to city_rating_path(@city, @rating)
   end
   def edit
@@ -20,13 +20,21 @@ class RatingsController < ApplicationController
   def update
     @city = City.find(params[:city_id])
     @rating = @city.ratings.find(params[:id])
+    if @rating.user == current_user
     @rating.update(rating_params)
+  else
+    flash[:alert] = "Please Sign in"
+  end
     redirect_to city_rating_path(@city, @rating)
   end
   def destroy
     @city = City.find(params[:city_id])
     @rating = @city.ratings.find(params[:id])
+    if @rating.user == current_user
     @rating.destroy
+  else
+    flash[:alert] = "Please Sign in"
+  end
     redirect_to city_path(@city)
   end
   private

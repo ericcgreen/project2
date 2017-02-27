@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+
+.city_photo {
+  border: 5px dashed black;
+  width: 550px;
+  height: 400px;
+}
+
+img{
+  border: 5px solid green;
+  width: 300px;
+  height: 200px;
+}
