@@ -1,0 +1,24 @@
+<h1> Edit Rating </h1>
+
+
+<%= form_for [@city, @rating] do |f| %>
+
+<p>
+<%= f.label :comment, "Comments about Safety" %>
+<%= f.text_area :comment %>
+</p>
+<p>
+<%= f.label :recommendations, "Absolute Must sees and dos" %>
+<%= f.text_area :recommendations %>
+</p>
+<p>
+<%= f.label :user_photo, "Add a pic" %>
+<%= f.text_field :user_photo %>
+</p>
+<%= f.submit %>
+
+<% end %>
+
+<button type="button">
+<%= link_to "Delete", city_rating_path(@city, @rating), method: :delete %>
+</button>

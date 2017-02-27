@@ -1,6 +1,7 @@
 class RatingsController < ApplicationController
 
   def show
+    @city = City.find(params[:city_id])
     @rating = Rating.find(params[:id])
   end
   def new
@@ -20,10 +21,10 @@ class RatingsController < ApplicationController
     @city = City.find(params[:city_id])
     @rating = @city.ratings.find(params[:id])
     @rating.update(rating_params)
-    redirect_to city_path(@city)
+    redirect_to city_rating_path(@city, @rating)
   end
   def destroy
-    @city = Post.find(params[:city_id])
+    @city = City.find(params[:city_id])
     @rating = @city.ratings.find(params[:id])
     @rating.destroy
     redirect_to city_path(@city)

@@ -23,7 +23,7 @@ class CitiesController < ApplicationController
   end
   def destroy
     @city = City.find(params[:id])
-    @city.destory
+    @city.destroy
     redirect_to cities_path
   end
   private

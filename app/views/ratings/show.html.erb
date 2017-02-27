@@ -2,10 +2,7 @@
   <%= City.find(@rating.city_id).name %>, <%= City.find(@rating.city_id).country %>
 </h1>
 
-<p>
-  Overall Rating :
-  <%= rating_for_user @city, @user.rating %> 
-</p>
+
 
 <p>
 <%= @rating.safety_rating %>
@@ -26,3 +23,7 @@
 <p>
 <time> Updated at <%= @rating.updated_at %> </time>
 </p>
+
+<button type="button">
+<%= link_to "Edit Rating", edit_city_rating_path(@city, @rating) %>
+</button>

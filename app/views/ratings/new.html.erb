@@ -1,16 +1,8 @@
-
 <h1> Add New </h1>
 
 
 <%= form_for [@city, @rating] do |f| %>
-<p>
-<%= f.label :overall_rating, "Overall Rating" %>
-<%= rating_for @city, 'overall_rating', star: 5 %>
-</p>
-<p>
-<%= f.label :safe_rating, "Safety Rating" %>
-<%= rating_for @city, 'safe_rating', star: 5 %>
-</p>
+
 <p>
 <%= f.label :comment, "Comments about Safety" %>
 <%= f.text_area :comment %>

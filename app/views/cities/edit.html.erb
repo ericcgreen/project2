@@ -1,0 +1,28 @@
+<h1>Edit City</h1>
+
+<%= form_for @city do |f| %>
+
+<p>
+  <%= f.label :name, "City Name" %>
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :country, "Country Name" %>
+  <%= f.text_field :country %>
+</p>
+
+<p>
+  <%= f.label :photo, "City Skyline Photo" %>
+  <%= f.text_field :photo %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+
+<% end %>
+
+<button type="button">
+<%= link_to "Delete", city_path(@city), method: :delete %>
+</button>

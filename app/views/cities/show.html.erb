@@ -3,19 +3,30 @@
 
 <article>
 
-<img class="city_photo" src="<%= @city.photo %>">
+<p>
+  <img class="city_photo" src="<%= @city.photo %>">
+</p>
+
+<p>
+  <button type="button">
+      <%= link_to "Edit City", edit_city_path(@city) %>
+    </button>
+</p>
 
 <h2>Ratings</h2>
 
 <% @ratings.each do |rating| %>
 
-<p><%= link_to "#{rating.overall_rating}", city_rating_path(@city, rating) %><p>
+<p>
+  <%= link_to "#{rating.comment}", city_rating_path(@city, rating) %>
+</p>
 
 <% end %>
+
 </article>
 
 <p>
   <button type="button">
     <%= link_to "Add New", new_city_rating_path(@city) %>
   </button>
-  </p>
+</p>
