@@ -13,7 +13,11 @@ Rating.destroy_all
 
 tokyo = City.create!(name: "Tokyo", country: "Japan", photo: "http://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/Tokyo/Tokyo---CB-guide---Skyline-large.jpg")
 
-ratings = Rating.create!([{username: "#", overall_rating: "#", safety_rating: "#", comment: "#", recommendations: , user_photo: "#", city_id: city.id}])
+mark = User.create!(email: "me@gmail.com", password: "abc123")
+
+tokyo_ratings = Rating.create!(overall_rating: "#", safety_rating: "#", comment: "#", recommendations: "#", user_photo: "#", city: tokyo, user: mark)
+
+
 
 
 # next step is to build out views index then
