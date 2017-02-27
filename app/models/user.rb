@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :cities
   has_many :ratings
+  ratyrate_rater
 end

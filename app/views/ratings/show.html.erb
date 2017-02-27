@@ -2,16 +2,27 @@
   <%= City.find(@rating.city_id).name %>, <%= City.find(@rating.city_id).country %>
 </h1>
 
-<h2> <%= @rating.overall_rating %> </h2>
+<p>
+  Overall Rating :
+  <%= rating_for_user @city, @user.rating %> 
+</p>
+
+<p>
+<%= @rating.safety_rating %>
+</p>
+
 <p>
 <%= image_tag @rating.user_photo %>
+</p>
 
-<%= @rating.safety_rating %>
-
+<p>
 <%= @rating.comment %>
+</p>
 
+<p>
 <%= @rating.recommendations %>
+</p>
 
-<time> Updated at <%= @rating.updated_at %> by <%= @rating.user.email %> </time>
-
+<p>
+<time> Updated at <%= @rating.updated_at %> </time>
 </p>

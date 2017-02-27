@@ -1,4 +1,8 @@
 class RatingsController < ApplicationController
+
+  def show
+    @rating = Rating.find(params[:id])
+  end
   def new
     @city = City.find(params[:city_id])
     @rating = @city.ratings.new
@@ -6,10 +10,7 @@ class RatingsController < ApplicationController
   def create
     @city = City.find(params[:city_id])
     @rating = @city.ratings.create(rating_params)
-    redirect_to city_path(@city)
-  end
-  def show
-    @rating = Rating.find(params[:id])
+    redirect_to city_rating_path(@city, @rating)
   end
   def edit
     @city = City.find(params[:city_id])
