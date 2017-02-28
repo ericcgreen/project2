@@ -16,19 +16,21 @@
 
 article {
   background-color: rgba(0, 0, 0, .4);
-  border-radius: 40%;
-  overflow: scroll;
+  border-radius: 10%;
+  overflow: hidden;
+  padding: 15px;
+  min-width: 20em;
 }
 
 .app_body {
   background-color: rgba(3, 152, 247, 1);
   height: 50em;
-  margin: 2em 10em;
-  padding: 1em 5em;
+  margin: 3em 10em;
+  padding: 2em 5em;
   text-align: center;
   border: 15px solid rgba(194, 194, 194, 1);
   border-radius: 40%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 nav {
@@ -51,38 +53,54 @@ nav {
   height: 150px;
 }
 
-.user_photo {
-  border: 5px solid rgba(112, 112, 112, 1);
-  width: 50%;
-  height: 35%;
+.partial_text_box {
+  height: 90px;
+  overflow: hidden;
 }
-.logo_position {
 
-}
 .please_rate {
   color: red;
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-  color: rgba(244, 250, 21, 1);
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
   text-shadow: 2px 2px rgba(112, 112, 112, 1);
+  transform: rotate(350deg);
 }
 
-h2, h3, p {
+.city_name {
+  transform: rotate(340deg);
+  color: rgba(244, 250, 21, 1);
+  font-size: 60px;
+}
+
+h2, h3 {
   font-family: 'Droid Serif', serif;
-  color: white;
-  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+  color: rgba(3, 152, 247, 1);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto', sans-serif;
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
 }
 
 a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: white;
+  color: yellow;
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
 }
 
 button, input[type="submit"] {
   height: 50px;
   width: 100px;
   border-radius: 50%;
+  color: yellow;
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+  font-family: 'Roboto', sans-serif;
 }

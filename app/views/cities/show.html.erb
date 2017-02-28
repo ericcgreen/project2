@@ -1,28 +1,37 @@
 <div class="app_body" style="background: url(<%= @city.photo %>) rgba(3, 152, 247, 1) no-repeat center; background-size: cover">
 
-<h1>Welcome to <%= @city.name %>, <%= @city.country %>! </h1>
+<h1>Welcome to
+  <br>
+  <span class="city_name">
+  <%= @city.name %>, <%= @city.country %>!
+  </span>
+</h1>
 <time> Updated at <%= @city.updated_at %> </time>
-
-
 
 <p>
   <button type="button">
       <%= link_to "Edit City", edit_city_path(@city) %>
     </button>
 </p>
+
 <article>
 <h2>Ratings</h2>
 
+
 <% @ratings.each do |rating| %>
 
+<div class="partial_text_box">
 <p>
-  <%= rating.comment %>
-  <br>
+
+
   View <%= link_to "full review", city_rating_path(@city, rating) %> by
   <%= rating.user.email %>
+<br>
+  <%= rating.comment %>
 </p>
-
+</div>
 <% end %>
+
 
 </article>
 
