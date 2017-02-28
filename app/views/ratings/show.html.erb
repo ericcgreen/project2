@@ -1,15 +1,22 @@
+<div class="app_body">
+  
 <h1>
   <%= City.find(@rating.city_id).name %>, <%= City.find(@rating.city_id).country %>
 </h1>
 
-
-
+<p>Overall Rating: </p>
 <p>
-<%= @rating.safety_rating %>
+<%= rating_for @city, "overall_rating", stars: 10 %>
 </p>
 
+<p>Safety Rating: </p>
 <p>
-<%= image_tag @rating.user_photo %>
+<%= rating_for @city, "safety_rating", stars: 10 %>
+</p>
+
+
+<p>
+<%= image_tag @rating.user_photo, :class => "user_photo" %>
 </p>
 
 <p>
@@ -18,14 +25,16 @@
 </p>
 
 <p>
-<h2>Must sees and dos</h2>
+<h2>Things to do:</h2>
 <%= @rating.recommendations %>
 </p>
 
 <p>
-<time> Updated at <%= @rating.updated_at %> </time>
+<time> Posted <%= @rating.created_at %> </time>
 </p>
 
 <button type="button">
 <%= link_to "Edit Rating", edit_city_rating_path(@city, @rating) %>
 </button>
+
+</div>

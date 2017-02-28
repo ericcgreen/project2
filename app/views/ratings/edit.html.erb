@@ -1,24 +1,48 @@
+<div class="app_body">
+
 <h1> Edit Rating </h1>
 
 
 <%= form_for [@city, @rating] do |f| %>
 
 <p>
-<%= f.label :comment, "Comments about Safety" %>
-<%= f.text_area :comment %>
+  <h3>
+    <%= f.label :comment, "Comments about Safety" %>
+  </h3>
 </p>
+
 <p>
-<%= f.label :recommendations, "Absolute Must sees and dos" %>
-<%= f.text_area :recommendations %>
+  <%= f.text_area :comment %>
 </p>
+
 <p>
-<%= f.label :user_photo, "Add a pic" %>
-<%= f.text_field :user_photo %>
+  <h3>
+    <%= f.label :recommendations, "Absolute Must sees and dos" %>
+  </h3>
 </p>
-<%= f.submit %>
+
+<p>
+  <%= f.text_area :recommendations %>
+</p>
+
+<p>
+  <h3>
+    <%= f.label :user_photo, "Add a pic" %>
+  </h3>
+</p>
+
+<p>
+  <%= f.text_field :user_photo %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
 
 <% end %>
 
 <button type="button">
-<%= link_to "Delete", city_rating_path(@city, @rating), method: :delete %>
+  <%= link_to "Delete", city_rating_path(@city, @rating), method: :delete %>
 </button>
+
+</div>

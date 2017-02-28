@@ -1,19 +1,36 @@
+<div class="app_body">
+
 <h1>Add a new City</h1>
 
 <%= form_for @city do |f| %>
 
 <p>
-  <%= f.label :name, "City Name" %>
+  <h3>
+    <%= f.label :name, "City Name" %>
+  </h3>
+</p>
+
+<p>
   <%= f.text_field :name %>
 </p>
 
 <p>
-  <%= f.label :country, "Country Name" %>
+  <h3>
+    <%= f.label :country, "Country Name" %>
+  </h3>
+</p>
+
+<p>
   <%= f.text_field :country %>
 </p>
 
 <p>
-  <%= f.label :photo, "City Skyline Photo" %>
+  <h3>
+    <%= f.label :photo, "City Skyline Photo" %>
+  </h3>
+</p>
+
+<p>
   <%= f.text_field :photo %>
 </p>
 
@@ -22,3 +39,5 @@
 </p>
 
 <% end %>
+
+</div>
