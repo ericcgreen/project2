@@ -6,6 +6,27 @@
 
 <p>
   <h3>
+    <%= f.label :safety_rating, "How would you rate this city overall?" %>
+  </h3>
+</p>
+
+<p>
+  <%= f.number_field :overall_rating, min: 1, max: 5 %>
+</p>
+
+
+<p>
+  <h3>
+    <%= f.label :safety_rating, "How would you rate the safety of this city?" %>
+  </h3>
+</p>
+
+<p>
+  <%= f.number_field :safety_rating, min: 1, max: 5 %>
+</p>
+
+<p>
+  <h3>
     <%= f.label :comment, "What makes this city safe?" %>
   </h3>
 </p>
