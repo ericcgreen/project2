@@ -1,9 +1,9 @@
 <div class="app_body">
 
-<h1> Edit City </h1>
+<h1> Edit City Information </h1>
 
 <%= form_for @city do |f| %>
-
+<article>
 <p>
   <h3>
     <%= f.label :name, "City Name" %>
@@ -26,14 +26,14 @@
 
 <p>
   <h3>
-    <%= f.label :photo, "City Skyline Photo" %>
+    <%= f.label :photo, "Add a City Skyline Photo:" %>
   </h3>
 </p>
 
 <p>
   <%= f.text_field :photo %>
 </p>
-
+</article>
 <p>
   <%= f.submit %>
 </p>

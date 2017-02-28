@@ -4,6 +4,8 @@
 
 
 <%= form_for [@city, @rating] do |f| %>
+
+<article>
 <p>
   <h3>
     <%= f.label :safety_rating, "How would you rate this city overall?" %>
@@ -48,14 +50,14 @@
 
 <p>
   <h3>
-    <%= f.label :user_photo, "Add a photo." %>
+    <%= f.label :user_photo, "Add a photo:" %>
   </h3>
 </p>
 
 <p>
   <%= f.text_field :user_photo %>
 </p>
-
+</article>
 <p>
   <%= f.submit %>
 </p>

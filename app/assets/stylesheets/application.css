@@ -21,6 +21,7 @@
  }
 
 article {
+  margin-top: 50px;
   background-color: rgba(0, 0, 0, .4);
   border-radius: 10%;
   overflow: hidden;
@@ -51,7 +52,7 @@ nav {
 }
 
 .notice {
-  color: color: rgba(244, 250, 21, 1);
+  color: rgba(244, 250, 21, 1);
 }
 
 .navbar_right {
@@ -60,9 +61,11 @@ nav {
   margin-top: 15px;
   margin-left: auto;
   background-color: rgba(194, 194, 194, 1);
+  line-height: 25px;
   width: 98%;
-  padding: 5px 15px;
+  padding: 10px 10px;
   text-align: right;
+
 }
 
 .logo {
@@ -80,6 +83,20 @@ nav {
 
 .please_rate {
   color: red;
+}
+
+textarea {
+  height: 100px;
+}
+
+input, textarea {
+  width: 300px;
+  border: 3px solid rgba(194, 194, 194, 1);
+  border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+  border: 3px solid rgba(244, 250, 21, 1);
 }
 
 h1 {

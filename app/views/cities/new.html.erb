@@ -3,7 +3,7 @@
 <h1> Add a new City </h1>
 
 <%= form_for @city do |f| %>
-
+<article>
 <p>
   <h3>
     <%= f.label :name, "City Name" %>
@@ -33,7 +33,7 @@
 <p>
   <%= f.text_field :photo %>
 </p>
-
+</article>
 <p>
   <%= f.submit %>
 </p>
