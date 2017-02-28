@@ -1,10 +1,12 @@
-<div class="app_body">
+
+<div class="app_body" style="background: url(<%= @rating.user_photo %>) rgba(3, 152, 247, 1) no-repeat center; background-size: cover">
+
 
 <h1>
   <%= City.find(@rating.city_id).name %>, <%= City.find(@rating.city_id).country %>
 </h1>
-
-<p>Overall Rating: </p>
+<article>
+<h3>Overall Rating: </h3>
 <p>
   <% if @rating.overall_rating == "5" %>
    <p>
@@ -31,7 +33,7 @@
   <% end %>
 </p>
 
-<p>Safety Rating: </p>
+<h3>Safety Rating: </h3>
 
 <p>
   <% if @rating.safety_rating == "5" %>
@@ -59,26 +61,24 @@
   <% end %>
 </p>
 
+</article>
 
 
+<article>
 <p>
-<%= image_tag @rating.user_photo, :class => "user_photo" %>
-</p>
-
-<p>
-<h2>What makes this city safe or unsafe?</h2>
+<h3>What makes this city safe or unsafe?</h3>
 <%= @rating.comment %>
 </p>
 
 <p>
-<h2>What are some things to do?</h2>
+<h3>What are some things to do?</h3>
 <%= @rating.recommendations %>
 </p>
 
 <p>
 <time> Posted <%= @rating.created_at %> </time>
 </p>
-
+</article>
 <button type="button">
 <%= link_to "Edit Rating", edit_city_rating_path(@city, @rating) %>
 </button>

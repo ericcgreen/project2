@@ -14,16 +14,21 @@
  *= require_self
  */
 
-body {
-
+article {
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 40%;
+  overflow: scroll;
 }
+
 .app_body {
   background-color: rgba(3, 152, 247, 1);
-  margin: 50px;
-  padding: 10px 50px;
+  height: 50em;
+  margin: 2em 10em;
+  padding: 1em 5em;
   text-align: center;
-  border: 10px solid rgba(194, 194, 194, 1);
-  border-radius: 15%;
+  border: 15px solid rgba(194, 194, 194, 1);
+  border-radius: 40%;
+  overflow: scroll;
 }
 
 nav {
@@ -46,16 +51,10 @@ nav {
   height: 150px;
 }
 
-.city_photo {
-  border: 5px dotted rgba(244, 250, 21, 1);
-  width: 90%;
-  height: 85%;
-}
-
 .user_photo {
-  border: 5px solid rgba(194, 194, 194, 1);
-  width: 90%;
-  height: 85%;
+  border: 5px solid rgba(112, 112, 112, 1);
+  width: 50%;
+  height: 35%;
 }
 .logo_position {
 
@@ -67,14 +66,19 @@ nav {
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 40px;
+  color: rgba(244, 250, 21, 1);
+  text-shadow: 2px 2px rgba(112, 112, 112, 1);
 }
 
 h2, h3, p {
   font-family: 'Droid Serif', serif;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 button, input[type="submit"] {

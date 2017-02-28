@@ -1,20 +1,16 @@
-<div class="app_body">
+<div class="app_body" style="background: url(<%= @city.photo %>) rgba(3, 152, 247, 1) no-repeat center; background-size: cover">
 
-<h1> <%= @city.name %>, <%= @city.country %> </h1>
+<h1>Welcome to <%= @city.name %>, <%= @city.country %>! </h1>
 <time> Updated at <%= @city.updated_at %> </time>
 
-<article>
 
-<p>
-  <img class="city_photo" src="<%= @city.photo %>">
-</p>
 
 <p>
   <button type="button">
       <%= link_to "Edit City", edit_city_path(@city) %>
     </button>
 </p>
-
+<article>
 <h2>Ratings</h2>
 
 <% @ratings.each do |rating| %>
