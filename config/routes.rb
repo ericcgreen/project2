@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'cities#index'
+  root to: 'home#index'
 
   resources :cities do
     resources :ratings
