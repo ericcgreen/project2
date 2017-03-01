@@ -28,7 +28,17 @@ Things you may want to cover:
 
 ## Issues
 
-1. One of the biggest issues is incorporating the RatyRate gem and utilizing it's functionality. Ultimately, I decided to not use this gem.
+1. One of the biggest issues was incorporating the RatyRate gem and utilizing it's star rating functionality. Ultimately, I decided to not use this gem.
+
+## Deliverables
+
+1. MVP: 2 models: Cities and Ratings. CRUD functionality.
+
+2. Bronze: Devise/User. Style to window. Icon/Logo.
+
+3. Silver: Star rating system. Comments section to ratings.
+
+4. Gold: Organize, sort, and search cites < countries < continents. A map?
 
 ## User Stories
 
