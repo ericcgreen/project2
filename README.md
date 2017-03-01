@@ -1,27 +1,5 @@
-# README
+# Safe Travels
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 ## About this App
 
 The premise about this app centered around safety. Users would log their experiences and thoughts about the safety of the cities they've visited so that other users who plan on visiting those cities could aware of what they are getting themselves into. Safety is sometimes an overlooked aspect when planning a trip. Although user experiences differ greatly, hopefully this app will provide users a better perspective on their desired destinations.
