@@ -18,57 +18,46 @@ body {
    background-image: url("safetravelslogotext.png");
    background-repeat: no-repeat;
    background-color: rgba(228, 228, 228, 0.5);
-   overflow: visible;
+   overflow: hidden;
 }
-
 article {
   margin-top: 50px;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .3);
   border-radius: 70px;
   overflow: hidden;
   padding: 15px;
   min-width: 15em;
   position: relative;
 }
-
-.home_body {
+.home_body, .app_body {
   background-color: rgba(3, 152, 247, 1);
   height: 28.5em;
   margin: 1em 15em;
   text-align: center;
   border: 15px solid rgba(194, 194, 194, 1);
   border-radius: 40%;
+}
+.home_body {
   overflow-y: hidden;
 }
 .app_body {
-  background-color: rgba(3, 152, 247, 1);
-  height: 28.5em;
-  margin: 1em 15em;
-  text-align: center;
-  border: 15px solid rgba(194, 194, 194, 1);
-  border-radius: 40%;
   overflow-y: scroll;
 }
-
 nav {
    display: flex;
    flex-direction: column;
    align-items: center;
    height: 230px;
 }
-
 .flashes {
   margin-left: auto;
 }
-
 .alert {
   color: red;
 }
-
 .notice {
   color: rgba(244, 250, 21, 1);
 }
-
 .navbar_right {
   display: inline;
   align-self: flex-end;
@@ -80,34 +69,27 @@ nav {
   padding: 10px;
   text-align: right;
 }
-
 .logo {
   height: 150px;
 }
-
 .partial_text_box {
   height: 90px;
   overflow: hidden;
 }
-
 .please_rate {
   color: red;
 }
-
-textarea {
-  height: 100px;
-}
-
 input, textarea {
   width: 300px;
   border: 3px solid rgba(194, 194, 194, 1);
   border-radius: 10px;
 }
-
+textarea {
+  height: 100px;
+}
 input:focus, textarea:focus {
   border: 3px solid rgba(244, 250, 21, 1);
 }
-
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 40px;
@@ -115,13 +97,6 @@ h1 {
   text-shadow: 2px 2px rgba(112, 112, 112, 1);
   transform: rotate(350deg);
 }
-
-.city_name {
-  transform: rotate(340deg);
-  color: rgba(244, 250, 21, 1);
-  font-size: 65px;
-}
-
 h2, h3 {
   font-family: 'Droid Serif', serif;
   letter-spacing: 2px;
@@ -129,7 +104,6 @@ h2, h3 {
   color: rgba(3, 152, 247, 1);
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
 }
-
 p {
   font-family: 'Droid Serif', serif;
   font-size: 25px;
@@ -137,7 +111,6 @@ p {
   font-family: 'Roboto', sans-serif;
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
 }
-
 a {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -145,14 +118,12 @@ a {
   color: yellow;
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
 }
-
 time {
   color: rgba(3, 152, 247, 1);
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
-
 button, input[type="submit"] {
   height: 70px;
   width: 200px;
@@ -162,19 +133,21 @@ button, input[type="submit"] {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
-
+.city_name {
+  transform: rotate(340deg);
+  color: rgba(244, 250, 21, 1);
+  font-size: 65px;
+}
 .shutter_button {
   margin-top: 30px;
   height: 65px;
   width: 200px;
 }
-
 .home_shutter_button {
   margin-top: 340px;
   height: 65px;
   width: 200px;
 }
-
 footer {
   margin-left: auto;
   background-color: rgba(194, 194, 194, 1);
@@ -184,27 +157,23 @@ footer {
   padding: 10px;
   margin: 20px 0px;
 }
-
 .screen {
   background-color: rgba(170, 170, 170, 1);
   height: 100px;
   width: 100%;
   margin-top: -1em;
 }
-
 .home_screen {
   background-color: rgba(170, 170, 170, 1);
   height: 410px;
   width: 100%;
   margin-bottom: 3em;
 }
-
 .star-box {
   display: inline-block;
   background: #fff;
   position: relative;
 }
-
 .star-box img {
     cursor: pointer;
     float: left;
@@ -212,7 +181,6 @@ footer {
     width: 30px;
     z-index: 2;
 }
-
 .star-bar {
   position: absolute;
   height: 100%;
@@ -222,7 +190,6 @@ footer {
   width: 0%;
   z-index: 0;
 }
-
 .star-bartwo {
   position: absolute;
   height: 100%;
