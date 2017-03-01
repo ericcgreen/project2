@@ -19,7 +19,15 @@
 </p>
 
 <p>
-  <%= f.number_field :overall_rating, min: 1, max: 5 %>
+  <div class="star-box">
+  <img src="<%= image_url("star.png") %>" id="star-1">
+  <img src="<%= image_url("star.png") %>" id="star-2">
+  <img src="<%= image_url("star.png") %>" id="star-3">
+  <img src="<%= image_url("star.png") %>" id="star-4">
+  <img src="<%= image_url("star.png") %>" id="star-5">
+  <div class="star-bar"></div>
+  <%= f.hidden_field :overall_rating, id: "star-val" %>
+</div>
 </p>
 
 
@@ -30,7 +38,15 @@
 </p>
 
 <p>
-  <%= f.number_field :safety_rating, min: 1, max: 5 %>
+  <div class="star-box">
+  <img src="<%= image_url("star.png") %>" id="star-1b">
+  <img src="<%= image_url("star.png") %>" id="star-2b">
+  <img src="<%= image_url("star.png") %>" id="star-3b">
+  <img src="<%= image_url("star.png") %>" id="star-4b">
+  <img src="<%= image_url("star.png") %>" id="star-5b">
+  <div class="star-bartwo"></div>
+  <%= f.hidden_field :safety_rating, id: "star-val2" %>
+</div>
 </p>
 
 

@@ -180,3 +180,36 @@ footer {
   width: -50%;
   margin-top: -3em;
 }
+
+.star-box {
+  display: inline-block;
+  background: #fff;
+  position: relative;
+}
+.star-box img {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    width: 30px;
+    z-index: 2;
+  }
+
+.star-bar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: yellow;
+  width: 0%;
+  z-index: 0;
+}
+
+.star-bartwo {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: yellow;
+  width: 0%;
+  z-index: 0;
+}
