@@ -17,12 +17,13 @@
 body {
    background-image: url("safetravelslogotext.png");
    background-repeat: no-repeat;
+   background-color: rgba(228, 228, 228, 0.5);
 }
 
 article {
   margin-top: 50px;
-  background-color: rgba(0, 0, 0, .6);
-  border-radius: 10%;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 70px;
   overflow: hidden;
   padding: 15px;
   min-width: 20em;
@@ -157,6 +158,12 @@ button, input[type="submit"] {
   font-family: 'Roboto', sans-serif;
 }
 
+.shutter_button {
+  margin-top: 30px;
+  height: 65px;
+  width: 175px;
+}
+
 footer {
   margin-left: auto;
   background-color: rgba(194, 194, 194, 1);
@@ -165,4 +172,11 @@ footer {
   text-align: center;
   padding: 10px;
   margin: 20px 0px;
+}
+
+.screen {
+  background-color: rgba(170, 170, 170, 1);
+  height: 100px;
+  width: -50%;
+  margin-top: -3em;
 }

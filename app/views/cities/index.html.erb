@@ -1,10 +1,12 @@
 <div class="app_body">
 
-<h1> Cities </h1>
+  <div class="screen">
+    <button type="button" class="shutter_button">
+     <%= link_to "Add a city", new_city_path %>
+    </button>
+  </div>
 
-<button type="button">
-  <%= link_to "Add a city", new_city_path %>
-</button>
+<h1> Cities </h1>
 
 <% @cities.each do |city| %>
 

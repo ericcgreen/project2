@@ -1,6 +1,12 @@
 <div class="app_body">
-<h1> Add New Rating </h1>
 
+  <div class="screen">
+    <button type="button" class="shutter_button">
+     <%= link_to "Back", cities_path %>
+    </button>
+  </div>
+
+<h1> Add New Rating </h1>
 
 <%= form_for [@city, @rating] do |f| %>
 <article>

@@ -1,6 +1,12 @@
 
 <div class="app_body" style="background: url(<%= @rating.user_photo %>) rgba(3, 152, 247, 1) no-repeat center; background-size: cover">
 
+  <div class="screen">
+    <button type="button" class="shutter_button">
+     <%= link_to "Back", cities_path %>
+    </button>
+  </div>
+
 
 <h1>
   <span class="city_name">
@@ -79,11 +85,10 @@
 
 <time> Posted <%= @rating.created_at %> </time>
 
-
 </article>
-
+<p>
 <button type="button">
 <%= link_to "Edit Rating", edit_city_rating_path(@city, @rating) %>
 </button>
-
+</p>
 </div>
