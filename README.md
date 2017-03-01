@@ -22,9 +22,17 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+## About this App
+
+The premise about this app centered around safety. Users would log their experiences and thoughts about the safety of the cities they've visited so that other users who plan on visiting those cities could aware of what they are getting themselves into. Safety is sometimes an overlooked aspect when planning a trip. Although user experiences differ greatly, hopefully this app will provide users a better perspective on their desired destinations.
+
 ## Approach Taken
 
 1. The approach to make this app with simple CRUD function was with Ruby on Rails. Technologies used was the command line, ruby gems, Google Chrome, and Atom.
+
+## Technologies used
+
+Safe Travels uses Ruby on Rails for functionality and design. HTML and CSS are used to style the web app. And lastly, JQuery is used on the star rating system. https://designapp.io/ was used to create the logo/background.
 
 ## Issues
 

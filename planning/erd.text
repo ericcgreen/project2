@@ -1,0 +1,48 @@
+Project 2 ERD
+
+Travel Destination Rating App
+
+Users
+—devise
+—Admin boolean?
+
+Profiles
+—Username
+—History
+—Type of user
+
+Cities
+—name
+—country
+—Photo
+
+Rating
+—Overall rating
+—Safety rating
+—Comment
+—Must Sees/Dos
+-Photo
+
+Profile belongs_to User
+
+Profile has_many Cities and  Ratings
+
+Ratings belongs_to Cities
+
+parallax front end javascript webdevelopment
+
+MVP:
+2 models: Cities and Ratings. CRUD functionality
+
+Bronze:
+Devise/User
+Style to window
+Icon/Logo
+
+Silver:
+Star rating system
+Comments section to ratings
+
+Gold:
+Organize, sort, and search cites < countries < continents
+a map?
