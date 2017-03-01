@@ -39,4 +39,4 @@ Safe Travels uses Ruby on Rails for functionality and design. HTML and CSS are u
 
 ## Acknowledgements
 
-A big thank you to Andy Flickinger and Eva Lai for their help and support! Andy helped with the star rating system and Eva helped with the application logic.
+A big thank you to Andy Flickinger and Eva Lai for their help and support! Andy helped with the star rating system and Eva helped with the application logic. Thank you to Hannah Schuster and Erica Norby.
