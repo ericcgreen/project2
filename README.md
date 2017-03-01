@@ -50,3 +50,7 @@ Things you may want to cover:
 6. As an observer, I should be able to understand where the user is on the web page.
 7. As a user, I should be able to rate the cities using the rating star system.
 8. As a user and observer, I should be able to easily understand the rating system.
+
+## Acknowledgements
+
+A big thank you to Andy Flickinger and Eva Lai for their help and support! Andy helped with the star rating system and Eva helped with the application logic.

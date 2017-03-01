@@ -11,13 +11,12 @@
 
   <body>
 
-
     <nav>
+
       <div class="logo_position">
         <a href="/"><%= image_tag(("my_logo.png"), :class => "logo") %>
         </a>
       </div>
-
       <div class="navbar_right">
 
         <% if !current_user %>
@@ -35,7 +34,7 @@
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
         </div>
-        
+
     </nav>
 
     <%= yield %>

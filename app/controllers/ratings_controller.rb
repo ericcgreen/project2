@@ -23,7 +23,7 @@ class RatingsController < ApplicationController
     if @rating.user == current_user
     @rating.update(rating_params)
   else
-    flash[:alert] = "Only the original author of this post can edit it"
+    flash[:alert] = "Cannot Edit"
   end
     redirect_to city_rating_path(@city, @rating)
   end
@@ -33,7 +33,7 @@ class RatingsController < ApplicationController
     if @rating.user == current_user
     @rating.destroy
   else
-    flash[:alert] = "Only the original author of this post can delete it"
+    flash[:alert] = "Cannot Delete"
   end
     redirect_to city_path(@city)
   end

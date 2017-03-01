@@ -15,6 +15,16 @@
 </h1>
 <article>
 <h3>Overall Rating: </h3>
+
+<div class="star-box">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<div class="star-bar" style="width: <%= @rating.overall_rating.to_i.to_f / 5 * 100 %>%;"></div>
+</div>
+
 <p>
   <% if @rating.overall_rating == "5" %>
    <p>
@@ -42,6 +52,15 @@
 </p>
 
 <h3>Safety Rating: </h3>
+
+<div class="star-box">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<img src="<%= image_url("star.png") %>">
+<div class="star-bar" style="width: <%= @rating.safety_rating.to_i.to_f / 5 * 100 %>%;"></div>
+</div>
 
 <p>
   <% if @rating.safety_rating == "5" %>

@@ -21,7 +21,7 @@ class CitiesController < ApplicationController
     if @city.user == current_user
     @city.update(city_params)
   else
-    flash[:alert] = "Only the original author of this post can edit it"
+    flash[:alert] = "Cannot Edit"
   end
     redirect_to city_path(@city)
   end
@@ -30,7 +30,7 @@ class CitiesController < ApplicationController
     if @city.user == current_user
     @city.destroy
   else
-    flash[:alert] = "Only the original author of this post can delete it"
+    flash[:alert] = "Cannot Delete"
   end
     redirect_to cities_path
   end
